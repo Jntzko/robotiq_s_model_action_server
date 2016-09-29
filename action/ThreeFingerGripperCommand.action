@@ -1,0 +1,9 @@
+ThreeFingerGripperCommand command
+---
+ThreeFingerGripperCommand command
+bool stalled      # True iff the gripper is exerting max effort and not moving
+bool reached_goal # True iff the gripper position has reached the commanded setpoint
+---
+ThreeFingerGripperCommand command
+bool stalled      # True iff the gripper is exerting max effort and not moving
+bool reached_goal # True iff the gripper position has reached the commanded setpoint

@@ -1,0 +1,3 @@
+GripperCommand finger_middle
+GripperCommand finger_1
+GripperCommand finger_2

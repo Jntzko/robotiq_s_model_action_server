@@ -10,9 +10,26 @@ find_package(catkin REQUIRED COMPONENTS
   control_msgs
 )
 
+add_action_files(DIRECTORY action
+  FILES
+  ThreeFingerGripperCommand.action
+)
+
+add_message_files(DIRECTORY msg
+  FILES
+  ThreeFingerGripperCommand.msg
+)
+
+generate_messages(DEPENDENCIES 
+  std_msgs
+  actionlib_msgs
+  control_msgs
+)
+
 catkin_package(
   INCLUDE_DIRS include
-  CATKIN_DEPENDS actionlib actionlib_msgs robotiq_s_model_control roscpp
+  CATKIN_DEPENDS actionlib actionlib_msgs robotiq_s_model_control roscpp 
+  DEPENDS control_msgs
 )
 
 include_directories(include)
